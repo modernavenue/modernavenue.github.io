@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MODERN AVENUE</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section id="header">
+    <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+        <li id="close"><a href="#"><i class="far fa-times"></i></a></li>
+      </ul>
+    </div>
+
+    <div id="mobile">
+      <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+      <i id="bar" class="fas fa-outdent"></i>
+    </div>
+
+  </section>
+
+  <section id="pdetails" class="section-p1">
+    <div class="single-pro-image">
+      <img src="img/products/12/4.webp" width="100%" id="MainImg" alt="">
+
+      <div class="small-img-group">
+        <div class="small-img-col">
+          <img src="img/products/12/1.webp" width="100%" class="small-img" alt="">
+        </div>
+        <div class="small-img-col">
+          <img src="img/products/12/2.webp" width="100%" class="small-img" alt="">
+        </div>
+        <div class="small-img-col">
+          <img src="img/products/12/3.webp" width="100%" class="small-img" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="single-pro-details">
+      <h6><a href="aquamarine.html">Aquamarine Collection</a> / <a href="necklaces.html">Necklace</a></h6>
+      <h4>Round Aquamarine Pendant</h4>
+      <h2>Php 1,700</h2>
+      <select>
+        <option>Select Size</option>
+        <option>Small</option>
+        <option>Medium</option>
+        <option>Large</option>
+        <option>XL</option>
+        <option>XXL</option>
+      </select>
+      <input type="number" value="1">
+      <button class="normal single-pro-button">Add To Cart</button>
+      <h4>Product Details</h4>
+      <span>Be enthralled by the exquisite beauty of the platinum pendant, adorned with a round aquamarine and round brilliant diamonds. This pendant is a captivating masterpiece that combines luxurious materials and dazzling gemstones to create a truly remarkable piece of jewelry.
+      <br><br>At the center of this pendant lies a round aquamarine with a carat weight of 0.50, radiating with the serene blue hues reminiscent of tranquil waters. The aquamarine's rounded shape adds a sense of elegance and harmony, capturing the eye with its captivating allure.
+      <br><br>This pendant becomes a wearable work of art, designed to grace your neckline with its captivating presence. Whether worn for a special occasion or as an everyday accessory, it adds a touch of sophistication and grace to any ensemble, becoming a true statement piece.
+    </span>
+    </div>
+  </section>
+
+  <section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+      <h4>Sign Up For Newsletters</h4>
+      <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+    </div>
+    <div class="form">
+      <input type="text" placeholder="Your email address">
+      <button class="normal">Sign Up</button>
+    </div>
+  </section>
+
+  <footer class="section-p1">
+    <div class="col">
+      <img class="logo" src="img/logo.png" alt="">
+      <h4>Contact</h4>
+                <p><strong>Address: </strong> Polytechnic University of the Philippines, Sta. Mesa, Manila</p>
+                <p><strong>Phone: </strong> (02)-8123-4567</p>
+                <p><strong>Hours: </strong> Monday to Sunday: 8.00 am to 5.00 pm</p>
+      <div class="follow">
+        <h4>Follow Us</h4>
+        <div class="icon">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-pinterest-p"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <h4>About</h4>
+      <a href="#">About Us</a>
+      <a href="#">Delivery Information</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Contact Us</a>
+    </div>
+
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="#">Sign In</a>
+      <a href="#">View Cart</a>
+      <a href="#">My Wishlist</a>
+      <a href="#">Track My Order</a>
+      <a href="#">Help</a>
+    </div>
+
+    <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div>
+        <img src="img/pay/app.jpg" alt="" class="row">
+        <img src="img/pay/play.jpg" alt="" class="row">
+      </div>
+      <p>Secured Payment Gateways</p>
+      <img src="img/pay/pay.png" alt="">
+    </div>
+
+  </footer>
+
+  <script>
+    const navItems = document.querySelectorAll("#navbar li a");
+const currentPath = window.location.pathname;
+const homeLink = document.querySelector("#navbar li:first-child a");
+const shopLink = document.querySelector("#navbar li:nth-child(2) a");
+const blogLink = document.querySelector("#navbar li:nth-child(3) a");
+const aboutLink = document.querySelector("#navbar li:nth-child(4) a");
+const contactLink = document.querySelector("#navbar li:nth-child(5) a");
+
+const bar = document.getElementById('bar');
+const closeButtons = document.querySelectorAll('#close a');
+const nav = document.getElementById('navbar');
+
+const toggleNavbar = () => {
+  nav.classList.toggle('active');
+};
+
+closeButtons.forEach((close) => {
+  close.addEventListener('click', (event) => {
+    event.preventDefault();
+    toggleNavbar();
+  });
+});
+
+if (bar) {
+  bar.addEventListener('click', () => {
+    toggleNavbar();
+  });
+}
+
+navItems.forEach((item) => {
+  item.addEventListener("mouseover", () => {
+    navItems.forEach((navItem) => {
+      navItem.classList.remove("active");
+    });
+    item.classList.add("active");
+  });
+});
+
+document.addEventListener("mouseleave", () => {
+  navItems.forEach((item) => {
+    item.classList.remove("active");
+  });
+
+  if (currentPath === "/index.html") {
+    homeLink.classList.add("active");
+  } else if (currentPath === "/shop.html") {
+    shopLink.classList.add("active");
+  } else if (currentPath === "/blog.html") {
+    blogLink.classList.add("active");
+  } else if (currentPath === "/about.html") {
+    aboutLink.classList.add("active");
+  } else if (currentPath === "/contact.html") {
+    contactLink.classList.add("active");
+  }
+});
+
+document.addEventListener("mouseover", () => {
+  const hoveredItem = document.querySelector("#navbar li a:hover");
+  if (!hoveredItem) {
+    navItems.forEach((item) => {
+      item.classList.remove("active");
+    });
+
+    if (currentPath === "/index.html") {
+      homeLink.classList.add("active");
+    } else if (currentPath === "/shop.html") {
+      shopLink.classList.add("active");
+    } else if (currentPath === "/blog.html") {
+      blogLink.classList.add("active");
+    } else if (currentPath === "/about.html") {
+      aboutLink.classList.add("active");
+    } else if (currentPath === "/contact.html") {
+      contactLink.classList.add("active");
+    }
+  }
+});
+
+if (currentPath === "/index.html") {
+  homeLink.classList.add("active");
+} else if (currentPath === "/shop.html") {
+  shopLink.classList.add("active");
+} else if (currentPath === "/blog.html") {
+  blogLink.classList.add("active");
+} else if (currentPath === "/about.html") {
+  aboutLink.classList.add("active");
+} else if (currentPath === "/contact.html") {
+  contactLink.classList.add("active");
+}
+var MainImg = document.getElementById("MainImg");
+var smallImgList = document.getElementsByClassName("small-img");
+var singleProImage = document.querySelector(".single-pro-image");
+
+// Store the original MainImg source
+var originalMainImgSrc = MainImg.src;
+
+// Add event listeners to each small-img element
+for (var i = 0; i < smallImgList.length; i++) {
+  smallImgList[i].addEventListener("mouseover", changeMainImage);
+}
+
+// Event handler function to change the MainImg source
+function changeMainImage(event) {
+  var targetImgSrc = event.target.src;
+  MainImg.src = targetImgSrc;
+}
+
+// Add a mouseout event listener to revert MainImg to the original source
+singleProImage.addEventListener("mouseout", revertMainImage);
+
+// Function to revert MainImg to the original source
+function revertMainImage() {
+  MainImg.src = originalMainImgSrc;
+}
+
+
+    const addToCartButton = document.querySelector('#pdetails .single-pro-button');
+    addToCartButton.addEventListener('click', () => {
+      const productImage = document.querySelector('.single-pro-image img');
+      const productName = document.querySelector('.single-pro-details h4').textContent;
+      const productPrice = document.querySelector('.single-pro-details h2').textContent;
+      const productQuantity = document.querySelector('.single-pro-details input').value;
+
+      const selectedProduct = {
+        image: productImage.src,
+        name: productName,
+        price: productPrice,
+        quantity: productQuantity
+      };
+
+      const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+      cartItems.push(selectedProduct);
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    });
+  </script>
+</body>
+
+</html>
