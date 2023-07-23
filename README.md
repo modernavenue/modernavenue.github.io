@@ -1,8 +1,8 @@
 # Modern Avenue
-    Welcome to Modern Avenue, your one-stop destination for trendy and affordable jewelry and accessories. We believe that every 
-    individual should have the opportunity to express their unique style without breaking the bank. At Modern Avenue, we curate 
-    a diverse collection of high-quality bracelets, earrings, glasses, necklaces, rings, and watches, designed to elevate your 
-    look without compromising on your budget.
+    Welcome to Modern Avenue, your one-stop destination for trendy and affordable jewelry and accessories. 
+    We believe that every individual should have the opportunity to express their unique style without 
+    breaking the bank. At Modern Avenue, we curate a diverse collection of high-quality bracelets, earrings, 
+    glasses, necklaces, rings, and watches, designed to elevate your look without compromising on your budget.
   
 ## Website Link
 [_Click Here_](modernavenue.github.io)
